@@ -1,8 +1,12 @@
+/* Base embed container */
+
 .embed {
-  width: unset;
+  width: 100%;
   text-align: center;
-  max-width: 800px;
+  max-width: 340px;
   margin: 32px auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .embed > div {
@@ -27,6 +31,18 @@
   justify-content: center;
   position: absolute;
   inset: 0;
+}
+
+.embed > div > div > p > picture > img {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 120px;
+  max-height: 120px;
 }
 
 .embed .embed-placeholder picture img {
@@ -61,34 +77,61 @@
   left: 7px;
 }
 
-/* Force the flex row for the main container */
+/* Embed main flex row */
+
 .embed > div > div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 120px;
+  gap: 40px;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
+  box-sizing: border-box;
 }
 
-/* Remove default spacing from all <p> */
+/* p blocks inside main row */
+
 .embed > div > div > p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 120px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.embed > div > div > p + p {
+  display: block;
+  width: 100%;
+  margin: 8px 0 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  line-height: 1.3;
+  font-family: var(--body-font-family, sans-serif);
+  font-weight: 400;
+}
+
+.embed.embedsocial5 > div > div > p {
+  margin: 0;
+  padding: 0;
+}
+
+.embed > div > div > p:nth-child(even) {
   margin: 0;
   padding: 0;
   text-align: center;
-}
-
-/* Hide the label <p> from the main row so it only appears visually under the image column */
-.embed > div > div > p:nth-child(even) {
   width: 0;
-  padding: 0;
-  margin: 0;
   visibility: hidden;
   height: 0;
 }
 
-/* Simulate each image+label as a column by using flex-basis and vertical alignment */
 .embed > div > div > p:nth-child(odd) {
   display: flex;
   flex-direction: column;
@@ -100,18 +143,23 @@
   position: relative;
 }
 
-/* Make the image a perfect circle and size it properly */
-.embed > div > div > p:nth-child(odd) picture img {
+.embed > div > div > p > picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 0;
+  background: #eaeaea;
   width: 120px;
   height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  background: none;
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 120px;
+  max-height: 120px;
 }
 
-/* ...but when immediately following an image column, make it visible and part of the column */
+/* If a label is present in the HTML, show and style it below the image column (override for odd+next) */
 .embed > div > div > p:nth-child(odd) + p {
   display: block;
   font-size: 14px;
@@ -127,7 +175,7 @@
   height: auto;
 }
 
-/* Move .embed.embedsocial5 block and its child selectors below all .embed generic selectors to fix no-descending-specificity errors */
+/* --- embedsocial5 customizations --- */
 
 .embed.embedsocial5 > div > div {
   display: flex;
@@ -143,13 +191,6 @@
   position: relative;
 }
 
-/* Reset p spacing */
-.embed.embedsocial5 > div > div > p {
-  margin: 0;
-  padding: 0;
-}
-
-/* Each image block: side by side, relative for label positioning */
 .embed.embedsocial5 > div > div > p:nth-child(odd) {
   width: 340px;
   min-width: 220px;
@@ -157,7 +198,6 @@
   display: block;
 }
 
-/* Image styling */
 .embed.embedsocial5 > div > div > p:nth-child(odd) picture {
   display: block;
   width: 100%;
@@ -178,7 +218,6 @@
   box-shadow: none;
 }
 
-/* Label: absolutely positioned directly below its image, left-aligned */
 .embed.embedsocial5 > div > div > p:nth-child(odd) + p {
   position: absolute;
   left: 0;
@@ -198,7 +237,6 @@
   pointer-events: none;
 }
 
-/* Hide extra even <p> */
 .embed.embedsocial5 > div > div > p:nth-child(even):not(:nth-child(2), :nth-child(4)) {
   display: none;
 }
@@ -209,6 +247,7 @@
     flex-direction: column;
     gap: 48px;
     align-items: center;
+    max-width: 100%;
   }
 
   .embed > div > div > p:nth-child(odd) {
@@ -219,6 +258,20 @@
 }
 
 /* Responsive: stack columns, shrink images */
+@media (width <= 700px) {
+  .embed > div > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 100%;
+  }
+
+  .embed > div > div > p {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+
 @media (width <= 800px) {
   .embed.embedsocial5 > div > div {
     flex-direction: column;
@@ -238,8 +291,4 @@
   .embed.embedsocial5 > div > div > p:nth-child(odd) + p {
     top: 168px;
   }
-}
-
-.embed.embedsocial5 {
-  /* (No rules from base CSS or generated CSS for this selector, so merged block is empty) */
 }
