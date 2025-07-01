@@ -60,3 +60,85 @@
   top: 4px;
   left: 7px;
 }
+
+/* Force the flex row for the main container */
+.embed > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default spacing from all <p> */
+.embed > div > div > p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Hide the label <p> from the main row so it only appears visually under the image column */
+.embed > div > div > p:nth-child(even) {
+  /* removes the label p from the flex row's width calculation */
+  width: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+/* Simulate each image+label as a column by using flex-basis and vertical alignment */
+.embed > div > div > p:nth-child(odd) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 160px;
+  min-width: 120px;
+  max-width: 180px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Make the image a perfect circle and size it properly */
+.embed > div > div > p:nth-child(odd) picture img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  background: none;
+}
+
+/* ...but when immediately following an image column, make it visible and part of the column */
+.embed > div > div > p:nth-child(odd) + p {
+  display: block;
+  font-size: 14px;
+  color: #444;
+  font-family: var(--body-font-family);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  margin: 12px 0 0;
+  width: 100%;
+  text-align: center;
+  visibility: visible;
+  height: auto;
+}
+
+/* Responsive: stack columns on small screens */
+@media (width <= 600px) {
+  .embed > div > div {
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .embed > div > div > p:nth-child(odd) {
+    min-width: 0;
+    max-width: 200px;
+    width: 100%;
+  }
+}
