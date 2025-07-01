@@ -20,6 +20,67 @@
   display: block;
 }
 
+.columns.columns1 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  background: #fff;
+  padding: 0;
+}
+
+.columns.columns1 > div > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.04em;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.columns.columns1 > div > div:last-child {
+  display: flex;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 795px;
+  padding-top: 0;
+}
+
+.columns.columns1 > div > div:last-child > p {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.columns.columns1 > div > div:first-child > p:first-child {
+  font-family: var(--heading-font-family);
+  font-size: 60px;
+  font-weight: 700;
+  color: #F60;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 0;
+  min-width: 0;
+}
+
+.columns.columns1 > div > div:first-child > p:nth-child(2) {
+  font-family: var(--heading-font-family);
+  font-size: 60px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 0 0.04em;
+  line-height: 1;
+  letter-spacing: 0;
+  min-width: 0;
+}
+
 .columns.columns4 > div {
   display: flex;
   flex-direction: row;
@@ -129,82 +190,34 @@
     flex-direction: column;
     gap: 1.5rem;
   }
-
   .columns.columns4 > div > div:first-child,
   .columns.columns4 > div > div:last-child {
     max-width: 100%;
     width: 100%;
   }
-
   .columns.columns4 > div > div:first-child {
     margin-bottom: 1.3rem;
     justify-content: flex-start;
   }
-
   .columns.columns4 > div > div:last-child {
     max-width: 100%;
   }
-}
-
-.columns.columns1 > div {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  background: #fff;
-  padding: 0;
-}
-
-.columns.columns1 > div > div:first-child {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  gap: 0.04em;
-  margin: 0;
-  padding: 0;
-  min-width: 0;
-}
-
-.columns.columns1 > div > div:last-child {
-  display: flex;
-  align-items: flex-start;
-  min-width: 0;
-  max-width: 795px;
-  padding-top: 0;
-}
-
-.columns.columns1 > div > div:last-child > p {
-  font-family: var(--body-font-family);
-  font-size: 16px;
-  color: #666;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0;
-  text-align: left;
-  min-width: 0;
-  overflow-wrap: break-word;
-}
-
-.columns.columns1 > div > div:first-child > p:first-child {
-  font-family: var(--heading-font-family);
-  font-size: 60px;
-  font-weight: 700;
-  color: #F60;
-  margin: 0;
-  line-height: 1;
-  letter-spacing: 0;
-  min-width: 0;
-}
-
-.columns.columns1 > div > div:first-child > p:nth-child(2) {
-  font-family: var(--heading-font-family);
-  font-size: 60px;
-  font-weight: 500;
-  color: #000;
-  margin: 0 0 0 0.04em;
-  line-height: 1;
-  letter-spacing: 0;
-  min-width: 0;
+  .columns.columns1 > div {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .columns.columns1 > div > div:first-child,
+  .columns.columns1 > div > div:last-child {
+    max-width: 100%;
+    width: 100%;
+  }
+  .columns.columns1 > div > div:first-child {
+    margin-bottom: 1.3rem;
+    justify-content: flex-start;
+  }
+  .columns.columns1 > div > div:last-child {
+    max-width: 100%;
+  }
 }
 
 .columns.columns6 {
@@ -755,8 +768,6 @@
   }
 }
 
-/* BEGIN GENERATED CSS FOR .columns.columns14 */
-
 .columns.columns14 > div {
   display: flex;
   flex-direction: row;
@@ -840,4 +851,84 @@
   }
 }
 
-/* END GENERATED CSS FOR .columns.columns14 */
+.columns.columns15 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns15 > div > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.columns.columns15 > div > div:first-child > p:first-child {
+  color: #FF6B00;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  font-family: var(--heading-font-family);
+  letter-spacing: 0.01em;
+}
+
+.columns.columns15 > div > div:first-child > p:nth-child(2) {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  font-family: var(--heading-font-family);
+  letter-spacing: 0.01em;
+}
+
+.columns.columns15 > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 445px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.columns.columns15 > div > div:last-child > p {
+  color: #5e5e5e;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.38;
+  margin: 0 0 12px;
+  font-family: var(--body-font-family);
+  letter-spacing: 0;
+}
+
+.columns.columns15 > div > div:last-child > p:last-child {
+  margin-bottom: 0;
+}
+
+.columns.columns15 {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #fff;
+}
+
+@media (width <= 800px) {
+  .columns.columns15 > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .columns.columns15 > div > div:last-child {
+    max-width: 100%;
+  }
+}
