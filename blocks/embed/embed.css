@@ -105,6 +105,12 @@
   box-sizing: border-box;
 }
 
+.embed.embedsocial5 > div > div > p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .embed > div > div > p + p {
   display: block;
   width: 100%;
@@ -116,11 +122,6 @@
   line-height: 1.3;
   font-family: var(--body-font-family, sans-serif);
   font-weight: 400;
-}
-
-.embed.embedsocial5 > div > div > p {
-  margin: 0;
-  padding: 0;
 }
 
 .embed > div > div > p:nth-child(even) {
@@ -160,6 +161,7 @@
 }
 
 /* If a label is present in the HTML, show and style it below the image column (override for odd+next) */
+
 .embed > div > div > p:nth-child(odd) + p {
   display: block;
   font-size: 14px;
@@ -177,6 +179,22 @@
 
 /* --- embedsocial5 customizations --- */
 
+.embed.embedsocial5 {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background: none;
+  position: relative;
+}
+
+.embed.embedsocial5 img,
+.embed.embedsocial5 picture {
+  border-radius: 0;
+}
+
 .embed.embedsocial5 > div > div {
   display: flex;
   flex-direction: row;
@@ -184,11 +202,9 @@
   align-items: flex-start;
   gap: 40px;
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  margin: 0;
   padding: 0;
-  position: relative;
+  box-sizing: border-box;
 }
 
 .embed.embedsocial5 > div > div > p:nth-child(odd) {
@@ -196,6 +212,7 @@
   min-width: 220px;
   position: relative;
   display: block;
+  box-sizing: border-box;
 }
 
 .embed.embedsocial5 > div > div > p:nth-child(odd) picture {
@@ -218,6 +235,65 @@
   box-shadow: none;
 }
 
+/* Each image+label group as a "column" */
+.embed.embedsocial5 > div > div > p:nth-child(1),
+.embed.embedsocial5 > div > div > p:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 380px;
+  min-width: 240px;
+  box-sizing: border-box;
+}
+
+.embed.embedsocial5 > div > div > p:nth-child(1) picture,
+.embed.embedsocial5 > div > div > p:nth-child(3) picture {
+  display: block;
+  width: 100%;
+  height: 260px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 0;
+  background: none;
+  box-sizing: border-box;
+}
+
+.embed.embedsocial5 > div > div > p:nth-child(1) picture img,
+.embed.embedsocial5 > div > div > p:nth-child(3) picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Ensure labels show, left-aligned, just beneath each image */
+.embed.embedsocial5 > div > div > p:nth-child(2),
+.embed.embedsocial5 > div > div > p:nth-child(4) {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  line-height: 1.4;
+  background: none;
+  height: auto;
+  pointer-events: none;
+  white-space: normal;
+  visibility: visible;
+  position: static;
+  box-sizing: border-box;
+}
+
 .embed.embedsocial5 > div > div > p:nth-child(odd) + p {
   position: absolute;
   left: 0;
@@ -237,8 +313,13 @@
   pointer-events: none;
 }
 
-.embed.embedsocial5 > div > div > p:nth-child(even):not(:nth-child(2), :nth-child(4)) {
+.embed.embedsocial5 > div > div > p:nth-child(even):not(:nth-child(2)):not(:nth-child(4)) {
   display: none;
+}
+
+/* Remove any previous accidental absolute positioning */
+.embed.embedsocial5 > div > div > p[style*="position:absolute"] {
+  position: static;
 }
 
 /* Responsive: stack columns on small screens */
@@ -290,5 +371,25 @@
 
   .embed.embedsocial5 > div > div > p:nth-child(odd) + p {
     top: 168px;
+  }
+}
+
+/* Responsive: stack columns vertically under 900px */
+@media (width <= 900px) {
+  .embed.embedsocial5 > div > div {
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .embed.embedsocial5 > div > div > p:nth-child(1),
+  .embed.embedsocial5 > div > div > p:nth-child(3) {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .embed.embedsocial5 > div > div > p:nth-child(1) picture,
+  .embed.embedsocial5 > div > div > p:nth-child(3) picture {
+    height: 180px;
   }
 }
