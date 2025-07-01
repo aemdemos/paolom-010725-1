@@ -1,0 +1,26 @@
+{
+  "originUrl": "https://file-radial-96841932.figma.site",
+  "lastCrawled": "https://file-radial-96841932.figma.site/",
+  "urls": [
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "source": "SITEMAPS",
+      "targetPath": "/",
+      "id": "99780b5c23a7dde579502d2f035f8f1777b971ee"
+    }
+  ],
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": -1,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "sitemaps",
+    "logger": {},
+    "strategiesAttempted": [
+      "SITEMAPS"
+    ]
+  },
+  "extractionErrors": []
+}
