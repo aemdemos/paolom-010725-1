@@ -1,0 +1,392 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-00-7fbf9f0eb64fa78247e2a7b7572f4c008eaee785",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-35-62fa4ab4b53b1f6c27d0dde3bcbd7e42cf936ddb",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[11]"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Columns",
+      "cluster": 1,
+      "source": "Columns",
+      "target": "Columns (columns1)",
+      "key": "columns1",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-05-de837cbdb93538e45c5b0f1cede738e49d8ad764",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/div[1]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-10-a944c303e55785192a05d7ac9099a6b430234cfd",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Embed (social)",
+      "cluster": 2,
+      "source": "Embed",
+      "target": "Embed (embedSocial2)",
+      "key": "embedSocial2",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-19-2826387f56eb961a9b618e1564145c409ea6ef56",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-21-f19eaf150cd5eefb69472a231742b7bf5c64ec82",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-22-300d7e402162c3648d6d3b228a4983a15b73d41f",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 3,
+      "source": "Hero",
+      "target": "Hero (hero3)",
+      "key": "hero3",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-11-a4fae0b87032ea0112e2b1251ba2dd7596040377",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/div[2]/div[1]/div[1]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-12-28586a2198a51a50ccd1991e6058012729d59158",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/div[2]/div[1]/div[2]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-13-dc00246edac7266d8fa82e48b7ed584f6d812cc0",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/div[2]/div[1]/div[3]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-16-f2e8e6793f3c2d918b0faa6433c422584d2a81d2",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/div[2]/div[1]/div[5]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 4,
+      "source": "Columns",
+      "target": "Columns (columns4)",
+      "key": "columns4",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-26-ec699e5127d9fa289561251c32f816555424292a",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Embed (social)",
+      "cluster": 5,
+      "source": "Embed",
+      "target": "Embed (embedSocial5)",
+      "key": "embedSocial5",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-24-e3be9d374b46c5f20947b21b47a3761a22915683",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-25-3a635d5501e3d2023f493acf53dd936c77872742",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[3]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 6,
+      "source": "Columns",
+      "target": "Columns (columns6)",
+      "key": "columns6",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-15-03902782ad66bd5282cd5b70142744eb88172f59",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/div[2]/div[1]/div[4]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 7,
+      "source": "Hero",
+      "target": "Hero (hero7)",
+      "key": "hero7",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-29-753ea29a02da0b60284efec1500abe16cc0af10f",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-30-b8ad9b8808b69898b409d3319f63bd4284cdb600",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-31-c3052c0ae4a7a485cf73b5dded8fb61eec591d49",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-32-71e5cc4c886655180346f07227273e94c82f7896",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]"
+        },
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-33-62489799fbc36af0159f4f40286bb8de33c514af",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Cards (no images)",
+      "cluster": 8,
+      "source": "Cards",
+      "target": "Cards",
+      "key": "cardsNoImages8",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-09-c30d13b25b93956cca429c1a7058fcdddc8b599e",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/div[4]/div[2]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Accordion",
+      "cluster": 9,
+      "source": "Accordion",
+      "target": "Accordion",
+      "key": "accordion9",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-07-c42c69050d2cd435c3790d5b8200f68eab7fc41c",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/div[3]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 10,
+      "source": "Columns",
+      "target": "Columns (columns10)",
+      "key": "columns10",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-28-b068dded1ebf3632559b4bcd0ff035267d3ee55e",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 11,
+      "source": "Columns",
+      "target": "Columns (columns11)",
+      "key": "columns11",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-34-5a44a2bfb3118135c02c54d9254d58f1657a38dc",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 12,
+      "source": "Columns",
+      "target": "Columns (columns12)",
+      "key": "columns12",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-04-57c7b1aa906601eabe7cb3eea4568f689c81c2f7",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[5]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 13,
+      "source": "Columns",
+      "target": "Columns (columns13)",
+      "key": "columns13",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-02-d5eedff947ca10d7ac5b25e0bf86cbd815249073",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 14,
+      "source": "Columns",
+      "target": "Columns (columns14)",
+      "key": "columns14",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-03-460e99b418ded283d6f137a05568020125203d4c",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[4]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 15,
+      "source": "Columns",
+      "target": "Columns (columns15)",
+      "key": "columns15",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-17-858125829be918e109eb3aea0a29b366349b3272",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 16,
+      "source": "Hero",
+      "target": "Hero (hero16)",
+      "key": "hero16",
+      "instances": [
+        {
+          "url": "https://file-radial-96841932.figma.site/",
+          "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+          "uuid": "99780b5c-01-50f7171d5cafce5c552b328c24faeb4602c26936",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]"
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+      "uuid": "99780b5c-00-7fbf9f0eb64fa78247e2a7b7572f4c008eaee785",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+      "uuid": "99780b5c-06-0d9b3b024381fc6f75bdc1f56fe75fa5d9ec0719",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/div[2]"
+    },
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+      "uuid": "99780b5c-08-e5c9239982e9ab0c01914032b1176f4741e3ce41",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/div[4]/div[2]/div[1]"
+    },
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+      "uuid": "99780b5c-14-24ea7356593505a3255104a3e3476a4b5fa3a5c8",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]"
+    },
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+      "uuid": "99780b5c-18-684e610d145ddce0c86534046b1651af4d6664e6",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+      "uuid": "99780b5c-20-2a1f0e6f0b695972fa6cea90d88f7cb8c20abb0a",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]"
+    },
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+      "uuid": "99780b5c-23-dcb637fb3b309453bf11e5770ded8b0d9215172c",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+      "uuid": "99780b5c-27-6e66608c225543bea113343257a8ce6f9df4358d",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://file-radial-96841932.figma.site/",
+      "urlHash": "99780b5c23a7dde579502d2f035f8f1777b971ee",
+      "uuid": "99780b5c-35-62fa4ab4b53b1f6c27d0dde3bcbd7e42cf936ddb",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[11]"
+    }
+  ]
+}
