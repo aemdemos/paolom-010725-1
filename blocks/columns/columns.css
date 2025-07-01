@@ -20,8 +20,6 @@
   display: block;
 }
 
-/* Place all columnsX selectors before more specific descendants to satisfy no-descending-specificity */
-
 .columns.columns6 img {
   max-width: 100%;
   height: auto;
@@ -31,19 +29,6 @@
   z-index: 2;
 }
 
-.columns.columns11 img {
-  display: block;
-  width: 100%;
-  min-width: 0;
-  height: 150px;
-  object-fit: cover;
-  object-position: center;
-  margin-bottom: 4px;
-  border-radius: 0;
-  background: #f2f2f2;
-  padding: 0;
-}
-
 .columns.columns6 picture {
   max-width: 100%;
   height: auto;
@@ -51,19 +36,6 @@
   margin: 0 auto;
   position: relative;
   z-index: 2;
-}
-
-.columns.columns11 picture {
-  display: block;
-  width: 100%;
-  min-width: 0;
-  height: 150px;
-  object-fit: cover;
-  object-position: center;
-  margin-bottom: 4px;
-  border-radius: 0;
-  background: #f2f2f2;
-  padding: 0;
 }
 
 .columns.columns6 > div {
@@ -141,65 +113,30 @@
   background-repeat: no-repeat;
 }
 
-@media (width <= 1200px) {
-  .columns.columns6 > div {
-    gap: 18px;
-  }
-
-  .columns.columns6 > div > div {
-    gap: 18px;
-  }
-
-  .columns.columns6 > div > div > div {
-    min-width: 0;
-    max-width: unset;
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
+.columns.columns11 img {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 4px;
+  border-radius: 0;
+  background: #f2f2f2;
+  padding: 0;
 }
 
-@media (width <= 900px) {
-  .columns.columns6 > div {
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-  }
-
-  .columns.columns6 > div > div {
-    gap: 24px;
-  }
-
-  .columns.columns6 > div > div > div {
-    min-width: 0;
-    padding: 18px 4vw 28px;
-    height: auto;
-    min-height: 130px;
-    max-width: 100%;
-  }
-
-  .columns.columns6 > div > div > div > p:last-child {
-    font-size: 15px;
-  }
-
-  .columns.columns11 > div {
-    flex-direction: column;
-    gap: 16px;
-    align-items: stretch;
-  }
-
-  .columns.columns11 > div > div {
-    max-width: 100%;
-  }
-
-  .columns.columns11 picture,
-  .columns.columns11 img {
-    height: 90px;
-  }
-
-  .columns.columns11 > div > div > div > p {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
+.columns.columns11 picture {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 4px;
+  border-radius: 0;
+  background: #f2f2f2;
+  padding: 0;
 }
 
 .columns.columns11 > div {
@@ -360,6 +297,23 @@
   max-width: 100%;
 }
 
+@media (width <= 1200px) {
+  .columns.columns6 > div {
+    gap: 18px;
+  }
+
+  .columns.columns6 > div > div {
+    gap: 18px;
+  }
+
+  .columns.columns6 > div > div > div {
+    min-width: 0;
+    max-width: unset;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
 @media (width <= 900px) {
   .columns.columns6 > div {
     flex-direction: column;
@@ -488,39 +442,28 @@
   }
 }
 
-@media (width <= 1200px) {
-  .columns.columns6 > div {
-    gap: 18px;
-  }
-  .columns.columns6 > div > div {
-    gap: 18px;
-  }
-  .columns.columns6 > div > div > div {
-    min-width: 0;
-    max-width: unset;
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-}
-
 @media (width <= 700px) {
   .columns.columns14 > div {
     flex-direction: column;
     gap: 18px;
   }
+
   .columns.columns14 > div > div:first-child {
     min-width: 0;
     padding-left: 2px;
     padding-top: 0;
   }
+
   .columns.columns14 > div > div:first-child p {
     font-size: 20px;
   }
+
   .columns.columns14 > div > div:last-child {
     grid-template-columns: 1.3em 1fr;
     gap: 5px 0.7em;
     padding-top: 0;
   }
+
   .columns.columns14 > div > div:last-child > p:nth-child(odd),
   .columns.columns14 > div > div:last-child > p:nth-child(even) {
     font-size: 15px;
@@ -543,6 +486,7 @@
     align-items: flex-start;
     gap: 18px;
   }
+
   .columns.columns15 > div > div:last-child {
     max-width: 100%;
   }
@@ -625,16 +569,152 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .columns.columns1 > div > div:first-child,
   .columns.columns1 > div > div:last-child {
     max-width: 100%;
     width: 100%;
   }
+
   .columns.columns1 > div > div:first-child {
     margin-bottom: 1.3rem;
     justify-content: flex-start;
   }
+
   .columns.columns1 > div > div:last-child {
     max-width: 100%;
+  }
+}
+
+/* ====== MERGED .columns.columns4 (duplicates removed) ====== */
+.columns.columns4 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 28px;
+  padding-left: 32px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.columns.columns4 > div > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 145px;
+  min-width: 0;
+  width: 145px;
+  flex: 0 0 145px;
+  padding: 0;
+  margin: 0;
+  gap: 14px;
+}
+
+.columns.columns4 > div > div:first-child p {
+  margin: 0;
+  padding: 0;
+  font-family: var(--heading-font-family);
+  line-height: 1.06;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.columns.columns4 > div > div:first-child p:first-child {
+  color: #FF7300;
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.columns.columns4 > div > div:first-child p:nth-child(2) {
+  color: #111;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 0;
+  min-width: 0;
+  letter-spacing: 0;
+}
+
+.columns.columns4 > div > div:last-child {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 465px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.columns.columns4 > div > div:last-child > p:first-child {
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 6px;
+  max-width: 410px;
+}
+
+.columns.columns4 > div > div:last-child > p:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.columns.columns4 > div > div:last-child > p:nth-child(2) picture {
+  display: block;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  max-width: 390px;
+  margin: 0;
+  text-align: left;
+}
+
+.columns.columns4 > div > div:last-child > p:nth-child(2) img {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.columns.columns4 > div > div:last-child > p:nth-child(2) span,
+.columns.columns4 > div > div:last-child > p:nth-child(2) label {
+  display: none;
+}
+
+.columns.columns4 > div > div:last-child > p:not(:first-child, :nth-child(2)) {
+  color: #757575;
+  font-size: 15px;
+  line-height: 1.67;
+  font-weight: 400;
+  max-width: 455px;
+  margin: 0 0 13px;
+}
+
+.columns.columns4 > div > div:last-child strong,
+.columns.columns4 > div > div:last-child span,
+.columns.columns4 > div > div:last-child em {
+  color: #FF7300;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (width <= 900px) {
+  .columns.columns4 > div {
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .columns.columns4 > div > div:first-child,
+  .columns.columns4 > div > div:last-child {
+    max-width: 100%;
+    width: 100%;
   }
 }
