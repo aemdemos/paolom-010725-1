@@ -27,53 +27,6 @@
   box-sizing: border-box;
 }
 
-.columns.columns6 > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 32px;
-  width: 100%;
-  max-width: 100vw;
-}
-
-.columns.columns6 > div > div {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  gap: 24px;
-  flex: 1 1 0;
-  min-width: 0;
-}
-
-.columns.columns6 > div > div > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #ededf0;
-  border-radius: 14px;
-  min-width: 410px;
-  max-width: 440px;
-  min-height: 252px;
-  height: 252px;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-  padding: 32px 36px;
-  margin: 0 auto;
-}
-
-.columns.columns6 > div > div > div > p:first-child {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.columns.columns6 > div > div > div > p:last-child {
-  /* no changes needed */
-}
-
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -91,30 +44,40 @@
   display: block;
 }
 
+.columns.columns11 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
+}
+
 .columns.columns11 > div {
   display: flex;
-  flex-direction: row;
-  gap: 16px;
+  flex-flow: row wrap;
+  width: 100%;
+  gap: 18px 0;
   align-items: flex-start;
-  justify-content: center;
 }
 
 .columns.columns11 > div > div {
+  width: 50%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  min-width: 0;
-  flex: 1 1 0;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .columns.columns11 > div > div > div {
   background: #fff;
-  box-sizing: border-box;
-  margin: 0;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  margin: 0;
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .columns.columns11 > div > div > div > p {
@@ -285,11 +248,9 @@
   .columns.columns6 > div {
     gap: 18px;
   }
-
   .columns.columns6 > div > div {
     gap: 18px;
   }
-
   .columns.columns6 > div > div > div {
     min-width: 0;
     max-width: unset;
@@ -304,11 +265,9 @@
     gap: 24px;
     align-items: center;
   }
-
   .columns.columns6 > div > div {
     gap: 24px;
   }
-
   .columns.columns6 > div > div > div {
     min-width: 0;
     padding: 18px 4vw 28px;
@@ -316,58 +275,53 @@
     min-height: 130px;
     max-width: 100%;
   }
-
   .columns.columns6 > div > div > div > p:last-child {
     font-size: 15px;
   }
-
+  .columns.columns11 {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
   .columns.columns11 > div {
     flex-direction: column;
-    gap: 16px;
-    align-items: stretch;
+    row-gap: 10px;
   }
-
   .columns.columns11 > div > div {
     max-width: 100%;
+    width: 100%;
   }
-
   .columns.columns11 picture,
   .columns.columns11 img {
     height: 90px;
+    min-height: unset;
+    aspect-ratio: 16/11;
   }
-
   .columns.columns11 > div > div > div > p {
     padding-left: 4px;
     padding-right: 4px;
   }
-
   .columns.columns4 > div {
     flex-direction: column;
     gap: 1.5rem;
   }
-
   .columns.columns4 > div > div:first-child,
   .columns.columns4 > div > div:last-child {
     max-width: 100%;
     width: 100%;
   }
-
   .columns.columns4 > div > div:first-child {
     margin-bottom: 1.3rem;
     justify-content: flex-start;
   }
-
   .columns.columns4 > div > div:last-child {
     max-width: 100%;
   }
-
   .columns.columns12 > div {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
     min-height: unset;
   }
-
   .columns.columns12 > div > div:first-child,
   .columns.columns12 > div > div:last-child {
     max-width: 100%;
@@ -375,31 +329,26 @@
     padding: 1.2rem 1rem 0;
     align-items: flex-start;
   }
-
   .columns.columns12 > div > div:first-child > p,
   .columns.columns12 > div > div:first-child > p:first-child,
   .columns.columns12 > div > div:first-child > p:nth-child(2) {
     text-align: left;
   }
-
   .columns.columns12 > div > div:last-child > p:nth-child(3) img,
   .columns.columns12 > div > div:last-child > p:nth-child(4) img,
   .columns.columns12 > div > div:last-child > p:nth-child(5) img {
     max-width: 100%;
   }
-
   .columns.columns12 > div > div:last-child {
     padding: 0 1rem;
     max-width: 100%;
   }
-
   .columns.columns13 > div {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.2rem;
     padding: 16px 0 12px;
   }
-
   .columns.columns13 > div > div:first-child,
   .columns.columns13 > div > div:last-child {
     max-width: 100%;
@@ -408,60 +357,19 @@
     padding-right: 8px;
     height: auto;
   }
-
   .columns.columns13 > div > div:first-child p {
     font-size: 32px;
     line-height: 1.18;
     max-width: 100%;
   }
-
   .columns.columns13 > div > div:last-child {
     max-width: 100%;
     padding-right: 0;
   }
-
   .columns.columns13 > div > div:last-child p {
     font-size: 15px;
     line-height: 1.5;
   }
-}
-
-@media (width <= 700px) {
-  .columns.columns14 > div {
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .columns.columns14 > div > div:first-child {
-    min-width: 0;
-    padding-left: 2px;
-    padding-top: 0;
-  }
-
-  .columns.columns14 > div > div:first-child p {
-    font-size: 20px;
-  }
-
-  .columns.columns14 > div > div:last-child {
-    grid-template-columns: 1.3em 1fr;
-    gap: 5px 0.7em;
-    padding-top: 0;
-  }
-
-  .columns.columns14 > div > div:last-child > p:nth-child(odd),
-  .columns.columns14 > div > div:last-child > p:nth-child(even) {
-    font-size: 15px;
-  }
-}
-
-.columns.columns15 > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  background: #fff;
-  padding: 0;
-  margin: 0;
 }
 
 @media (width <= 800px) {
@@ -470,9 +378,32 @@
     align-items: flex-start;
     gap: 18px;
   }
-
   .columns.columns15 > div > div:last-child {
     max-width: 100%;
+  }
+}
+
+@media (width <= 700px) {
+  .columns.columns14 > div {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .columns.columns14 > div > div:first-child {
+    min-width: 0;
+    padding-left: 2px;
+    padding-top: 0;
+  }
+  .columns.columns14 > div > div:first-child p {
+    font-size: 20px;
+  }
+  .columns.columns14 > div > div:last-child {
+    grid-template-columns: 1.3em 1fr;
+    gap: 5px 0.7em;
+    padding-top: 0;
+  }
+  .columns.columns14 > div > div:last-child > p:nth-child(odd),
+  .columns.columns14 > div > div:last-child > p:nth-child(even) {
+    font-size: 15px;
   }
 }
 
@@ -553,18 +484,15 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
   .columns.columns1 > div > div:first-child,
   .columns.columns1 > div > div:last-child {
     max-width: 100%;
     width: 100%;
   }
-
   .columns.columns1 > div > div:first-child {
     margin-bottom: 1.3rem;
     justify-content: flex-start;
   }
-
   .columns.columns1 > div > div:last-child {
     max-width: 100%;
   }
@@ -634,3 +562,7 @@
   text-align: left;
   overflow-wrap: break-word;
 }
+
+/* Generated CSS - already covered by previous .columns.columns11 rules, removed duplicate rules */
+
+/* Responsive adjustments already covered above, removed duplicate selectors */
